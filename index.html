@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌄 Responsive Image Gallery</h1>
+    <p>By Amina Noor — Internship Project</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('mountain')">Mountain Landscapes</button>
+    <button onclick="filterSelection('portrait')">Portraits</button>
+    <button onclick="filterSelection('city')">City Skylines</button>
+    <button onclick="filterSelection('forest')">Forest Paths</button>
+    <button onclick="filterSelection('family')">Happy Families</button>
+    <button onclick="filterSelection('building')">Modern Buildings</button>
+  </div>
+
+  <div class="gallery">
+    <!-- City Skylines -->
+    <div class="gallery-item city"><img src="m.jfif" alt="City Skylines 1"></div>
+    <div class="gallery-item city"><img src="2.jpg" alt="City Skylines 2"></div>
+    <div class="gallery-item city"><img src="3.webp" alt="City Skylines 3"></div>
+    <div class="gallery-item city"><img src="4.jpg" alt="City Skylines 4"></div>
+    <div class="gallery-item city"><img src="5.jpg" alt="City Skylines 5"></div>
+    <div class="gallery-item city"><img src="6.jpg" alt="City Skylines 6"></div>
+
+    <!-- Forest Paths -->
+    <div class="gallery-item forest"><img src="7.jfif" alt="Forest Paths 1"></div>
+    <div class="gallery-item forest"><img src="8.jfif" alt="Forest Paths 2"></div>
+    <div class="gallery-item forest"><img src="9.jfif" alt="Forest Paths 3"></div>
+    <div class="gallery-item forest"><img src="10.jfif" alt="Forest Paths 4"></div>
+    <div class="gallery-item forest"><img src="11.jpg" alt="Forest Paths5"></div>
+    <div class="gallery-item forest"><img src="12.jfif" alt="Forest Paths 6"></div>
+
+    <!-- Mountain Landscapes -->
+    <div class="gallery-item mountain"><img src="a.jfif" alt="Mountain Landscapes1"></div>
+    <div class="gallery-item mountain"><img src="b.webp" alt="Mountain Landscapes 2"></div>
+    <div class="gallery-item mountain"><img src="c.jpg" alt="Mountain Landscapes 3"></div>
+    <div class="gallery-item mountain"><img src="d.jpg" alt="Mountain Landscapes4"></div>
+    <div class="gallery-item mountain"><img src="e.jpg" alt="Mountain Landscapes 5"></div>
+    <div class="gallery-item mountain"><img src="f.jfif" alt="Mountain Landscapes6"></div>
+
+    <!-- Modern Buildings -->
+    <div class="gallery-item building"><img src="19.jpg" alt="Modern Buildings 1"></div>
+    <div class="gallery-item building"><img src="20.webp" alt="Modern Buildings2"></div>
+    <div class="gallery-item building"><img src="21.webp" alt="Modern Buildings3"></div>
+    <div class="gallery-item building"><img src="22.jpg" alt="Modern Buildings 4"></div>
+    <div class="gallery-item building"><img src="23.webp" alt="Modern Buildings 5"></div>
+    <div class="gallery-item building"><img src="24.jpg" alt="Modern Buildings 6"></div>
+
+    <!-- Happy Families -->
+    <div class="gallery-item family"><img src="13.webp" alt="Family 1"></div>
+    <div class="gallery-item family"><img src="14.jpg" alt="Family 2"></div>
+    <div class="gallery-item family"><img src="15.jpg" alt="Family 3"></div>
+    <div class="gallery-item family"><img src="16.jpg" alt="Family 4"></div>
+    <div class="gallery-item family"><img src="17.jpg" alt="Family 5"></div>
+    <div class="gallery-item family"><img src="18.jpg" alt="Family 6"></div>
+
+    <!-- Portraits -->
+    <div class="gallery-item portrait"><img src="g.jfif" alt="Portrait 1"></div>
+    <div class="gallery-item portrait"><img src="h.webp" alt="Portrait 2"></div>
+    <div class="gallery-item portrait"><img src="i.jfif" alt="Portrait 3"></div>
+    <div class="gallery-item portrait"><img src="j.jfif" alt="Portrait 4"></div>
+    <div class="gallery-item portrait"><img src="k.jfif" alt="Portrait 5"></div>
+    <div class="gallery-item portrait"><img src="l.jfif" alt="Portrait 6"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
